@@ -1,0 +1,413 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.7.4"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 10,
+			"type": "MAT4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 1,
+			"count": 25488,
+			"type": "SCALAR",
+			"componentType": 5123
+		},
+		{
+			"bufferView": 2,
+			"count": 5125,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.0591875985,
+				1.90448754e-05,
+				-0.0259146877
+			],
+			"max": [
+				0.0425440483,
+				0.145042002,
+				0.0256432313
+			]
+		},
+		{
+			"bufferView": 3,
+			"count": 5125,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 5125,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 5125,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 6,
+			"count": 5125,
+			"type": "VEC4",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 7,
+			"count": 5125,
+			"type": "VEC4",
+			"componentType": 5121,
+			"normalized": true
+		}
+	],
+	"buffers": [
+		{
+			"uri": "Giraffe_Rigged_SkelMesh.bin",
+			"byteLength": 338616
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 640
+		},
+		{
+			"buffer": 0,
+			"byteLength": 50976,
+			"byteOffset": 640,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 61500,
+			"byteOffset": 51616,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 61500,
+			"byteOffset": 113116,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 82000,
+			"byteOffset": 174616,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 41000,
+			"byteOffset": 256616,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 20500,
+			"byteOffset": 297616,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 20500,
+			"byteOffset": 318116,
+			"target": 34962
+		}
+	],
+	"images": [
+		{
+			"uri": "Giraffe_Skin_MetallicRoughness.png"
+		},
+		{
+			"uri": "Giraffe_Skin_Occlusion.png"
+		},
+		{
+			"uri": "Giraffe_Skin_Specular.png"
+		},
+		{
+			"uri": "GiraffeSkin__BaseColor.png"
+		},
+		{
+			"uri": "GiraffeSkin__Normal.png"
+		}
+	],
+	"materials": [
+		{
+			"name": "Giraffe_Skin",
+			"pbrMetallicRoughness":
+			{
+				"baseColorTexture":
+				{
+					"index": 0
+				},
+				"metallicRoughnessTexture":
+				{
+					"index": 1
+				}
+			},
+			"normalTexture":
+			{
+				"index": 2
+			},
+			"occlusionTexture":
+			{
+				"index": 3
+			},
+			"extensions":
+			{
+				"KHR_materials_specular":
+				{
+					"specularTexture":
+					{
+						"index": 4
+					}
+				}
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Giraffe_Rigged_SkelMesh",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 2,
+						"NORMAL": 3,
+						"TANGENT": 4,
+						"TEXCOORD_0": 5,
+						"JOINTS_0": 6,
+						"WEIGHTS_0": 7
+					},
+					"indices": 1,
+					"material": 0
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"skin": 0,
+			"mesh": 0,
+			"children": [
+				1
+			]
+		},
+		{
+			"name": "root_jnt",
+			"rotation": [
+				0.707106829,
+				0,
+				-0,
+				0.707106829
+			],
+			"children": [
+				2,
+				8
+			]
+		},
+		{
+			"name": "spine_jnt",
+			"translation": [
+				9.39272722e-05,
+				1.83456604e-18,
+				-0.0299607348
+			],
+			"rotation": [
+				0.00938389357,
+				0.707044542,
+				0.707044542,
+				-0.00938389357
+			],
+			"children": [
+				3
+			]
+		},
+		{
+			"name": "chest_jnt",
+			"translation": [
+				0.0274991002,
+				2.22044592e-17,
+				-1.41639093e-19
+			],
+			"rotation": [
+				-9.16430506e-19,
+				-9.16430506e-19,
+				0.714550436,
+				-0.699583948
+			],
+			"children": [
+				4,
+				6,
+				7
+			]
+		},
+		{
+			"name": "neck_jnt",
+			"translation": [
+				0.0452487171,
+				0,
+				3.08148784e-35
+			],
+			"rotation": [
+				-0,
+				-0,
+				0.000110849382,
+				-1
+			],
+			"children": [
+				5
+			]
+		},
+		{
+			"name": "head_jnt",
+			"translation": [
+				0.0471948422,
+				-3.90798513e-15,
+				3.08148784e-35
+			]
+		},
+		{
+			"name": "left_arm_jnt",
+			"translation": [
+				-0.000629838964,
+				6.07982111e-05,
+				0.0198924392
+			],
+			"rotation": [
+				0.498654187,
+				-0.501342297,
+				-0.501342297,
+				0.498654187
+			]
+		},
+		{
+			"name": "right_arm_jnt",
+			"translation": [
+				-0.000629838964,
+				6.07982111e-05,
+				-0.0212434009
+			],
+			"rotation": [
+				0.498654187,
+				-0.501342297,
+				-0.501342297,
+				0.498654187
+			]
+		},
+		{
+			"name": "hip_jnt",
+			"translation": [
+				0.0290429555,
+				1.78987802e-18,
+				-0.029230928
+			],
+			"rotation": [
+				-0.00891098846,
+				0.707050681,
+				0.707050681,
+				0.00891098846
+			],
+			"children": [
+				9,
+				10
+			]
+		},
+		{
+			"name": "left_leg_jnt",
+			"translation": [
+				0.000169267965,
+				0.00103404606,
+				0.0198924392
+			],
+			"rotation": [
+				0.00891098846,
+				-0.707050681,
+				-0.707050681,
+				0.00891098846
+			]
+		},
+		{
+			"name": "right_leg_jnt",
+			"translation": [
+				0.000169267965,
+				0.00103404606,
+				-0.0212434009
+			],
+			"rotation": [
+				0.00891098846,
+				-0.707050681,
+				-0.707050681,
+				0.00891098846
+			]
+		}
+	],
+	"samplers": [
+		{
+			"minFilter": 9987,
+			"magFilter": 9729
+		}
+	],
+	"scenes": [
+		{
+			"nodes": [
+				0
+			]
+		}
+	],
+	"skins": [
+		{
+			"name": "Giraffe_Rigged_SkelMesh",
+			"inverseBindMatrices": 0,
+			"skeleton": 0,
+			"joints": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"textures": [
+		{
+			"name": "GiraffeSkin__BaseColor",
+			"sampler": 0,
+			"source": 3
+		},
+		{
+			"name": "Giraffe_Skin_MetallicRoughness",
+			"sampler": 0,
+			"source": 0
+		},
+		{
+			"name": "GiraffeSkin__Normal",
+			"sampler": 0,
+			"source": 4
+		},
+		{
+			"name": "Giraffe_Skin_Occlusion",
+			"sampler": 0,
+			"source": 1
+		},
+		{
+			"name": "Giraffe_Skin_Specular",
+			"sampler": 0,
+			"source": 2
+		}
+	],
+	"extensionsUsed": [
+		"KHR_materials_specular"
+	]
+}
