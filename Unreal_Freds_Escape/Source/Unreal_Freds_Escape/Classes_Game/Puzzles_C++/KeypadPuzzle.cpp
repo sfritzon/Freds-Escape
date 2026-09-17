@@ -1,12 +1,16 @@
 #include "KeypadPuzzle.h"
+<<<<<<< HEAD
 #include "Engine/Engine.h"
 #include "Components/PrimitiveComponent.h"
+=======
+>>>>>>> parent of 13a778f (Add KeypadButton actor and hook into KeypadPuzzle)
 
 AKeypadPuzzle::AKeypadPuzzle()
 {
     // Initialize properties if needed
 }
 
+<<<<<<< HEAD
 FVector AKeypadPuzzle::OnPressedFocus_Implementation(APlayerController* Player)
 {
     // Return a location slightly in front of the keypad so the camera zooms in
@@ -31,6 +35,8 @@ void AKeypadPuzzle::OnButtonPressed_Implementation(APlayerController* Player, UP
     else if (HitComponent->ComponentTags.Contains(FName("Clear"))) ClearInput();
 }
 
+=======
+>>>>>>> parent of 13a778f (Add KeypadButton actor and hook into KeypadPuzzle)
 void AKeypadPuzzle::EnterDigit(int32 Digit)
 {
     // Don't do anything if we already solved it
@@ -67,11 +73,15 @@ void AKeypadPuzzle::CheckCode()
     // Check if the input perfectly matches the correct code
     if (CurrentInput == CorrectCode)
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 13a778f (Add KeypadButton actor and hook into KeypadPuzzle)
         SetState(EPuzzleState::Solved);
     }
     else
     {
+<<<<<<< HEAD
         // Force the puzzle out of the Failed state so that it can transition 
         // back into it and trigger the Failed events/sounds again!
         if (GetState() == EPuzzleState::Failed)
@@ -79,6 +89,8 @@ void AKeypadPuzzle::CheckCode()
             SetState(EPuzzleState::Active);
         }
         
+=======
+>>>>>>> parent of 13a778f (Add KeypadButton actor and hook into KeypadPuzzle)
         SetState(EPuzzleState::Failed);
         ClearInput();
     }
