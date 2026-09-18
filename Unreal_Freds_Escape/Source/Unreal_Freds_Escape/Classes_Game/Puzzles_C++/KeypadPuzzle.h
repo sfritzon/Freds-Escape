@@ -35,12 +35,9 @@ public:
     // Call this if the player hits 'Clear' or if they enter the wrong code
     UFUNCTION(BlueprintCallable, Category = "Puzzle")
     void ClearInput();
-<<<<<<< HEAD
 
 public:
     // IPressedInteractable Interface overrides
     virtual FVector OnPressedFocus_Implementation(APlayerController* Player) override;
     virtual void OnButtonPressed_Implementation(APlayerController* Player, UPrimitiveComponent* HitComponent) override;
-=======
->>>>>>> parent of 13a778f (Add KeypadButton actor and hook into KeypadPuzzle)
 };
