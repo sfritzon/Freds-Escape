@@ -110,4 +110,5 @@ void AKeypadPuzzle::ClearInput()
         GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Orange, TEXT("Keypad Cleared!"));
     }
     CurrentInput.Empty();
+    SetState(EPuzzleState::Active);
 }
